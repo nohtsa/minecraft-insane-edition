@@ -1,0 +1,1 @@
+give @p minecraft:lingering_potion{display:{Name:"{\"text\":\"Arrow Relic\",\"color\":\"light_purple\",\"italic\":false}",Lore:["{\"text\":\"Power at what cost?\",\"color\":\"aqua\",\"italic\":false}","{\"text\":\"Fragile\",\"color\":\"red\",\"italic\":false}"]},HideFlags:32,CustomPotionColor:16777215} 1

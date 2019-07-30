@@ -1,0 +1,84 @@
+{
+	"type": "minecraft:entity",
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:bow",
+			"functions": [{
+				"function": "set_nbt",
+				"tag": "{display:{Name:\"{\\\"text\\\":\\\"Illusioner's Bow\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Boss Item\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\"]},RepairCost:10,Damage:200,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:power\",lvl:1s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.knockbackResistance\",Amount:100,Operation:1,UUIDLeast:42316,UUIDMost:154490,Slot:\"mainhand\"},{AttributeName:\"generic.movementSpeed\",Amount:-100,Operation:1,UUIDLeast:141105,UUIDMost:464820,Slot:\"mainhand\"}]}"
+			}],
+			"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.1,
+						"looting_multiplier": 0.0
+					}
+				]
+		}]
+	},
+	{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:cod_spawn_egg",
+			"functions": [{
+				"function": "set_nbt",
+				"tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+			}],
+			"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 1.0,
+						"looting_multiplier": 0.0
+					}
+				]
+		}]
+	},
+	{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:slime_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities\/luckyslime\",NoAI:1b,Size:0}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 1.0,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:pillager_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Illusioner Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Boss Statue\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\"]},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{id:\"minecraft:illusioner\",DeathLootTable:\"insanemode:entities\/trophy\",Silent:1b,NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"The Illusioner\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.1,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		}]
+
+}

@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "kill": {
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"danny\"]}"
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Killed Danny!"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "He's a phantom.."
+    }
+  },
+  "parent": "insanemode:root",
+  "rewards": {
+    "function": "insanemode:give_item/arrow_relic"
+  }
+}

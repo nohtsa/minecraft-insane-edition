@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:husk_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:experience_bottle",
+        "count": 1
+    },
+    "group": "egg_xp"
+}

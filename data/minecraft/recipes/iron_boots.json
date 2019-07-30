@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "i i"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bone_block"
+        },
+        "C": {
+            "item": "minecraft:chainmail_boots"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:iron_boots",
+        "count": 1
+    }
+}

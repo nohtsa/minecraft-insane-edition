@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#_#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:purpur_stairs"
+        },
+        "_": {
+            "item": "minecraft:purpur_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:shulker_shell",
+        "count": 1
+    }
+}

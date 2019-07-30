@@ -1,0 +1,130 @@
+{
+	"type": "minecraft:entity",
+	"pools": [{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:item",
+				"functions": [{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 0.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					},
+					{
+						"function": "minecraft:looting_enchant",
+						"count": {
+							"min": 0.0,
+							"max": 1.0
+						}
+					}
+				],
+				"name": "minecraft:arrow"
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:pillager_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Pillager Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Pillager\\\"}\",CanPickUpLoot:1b,Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:pillager_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"The Illusioner\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Boss\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{id:\"minecraft:illusioner\",Health:400f,DeathLootTable:\"insanemode:entities\/illusioner\",Tags:[\"buffed\",\"boss\",\"illusioner\"],HandItems:[{id:\"minecraft:bow\",Count:1b,tag:{AttributeModifiers:[{AttributeName:\"generic.knockbackResistance\",Amount:100,Operation:1,UUIDLeast:272022,UUIDMost:613379,Slot:\"mainhand\"}]}},{}],HandDropChances:[0.0F,0.85F],Attributes:[{Name:generic.maxHealth,Base:400},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:10},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:cod_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance":0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:slime_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities\/luckyslime\",NoAI:1b,Size:0}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:item",
+				"functions": [{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 0.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					},
+					{
+						"function": "minecraft:looting_enchant",
+						"count": {
+							"min": 0.0,
+							"max": 1.0
+						}
+					}
+				],
+				"name": "minecraft:emerald"
+			}]
+		}
+	]
+}

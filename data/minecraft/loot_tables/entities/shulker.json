@@ -1,0 +1,86 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+				"type": "item",
+				"name": "minecraft:shulker_shell",
+				"weight": 1,
+				"functions": [{
+						"function": "set_count",
+						"count": 2
+					},
+					{
+						"function": "looting_enchant",
+						"count": {
+							"min": 0,
+							"max": 1
+						}
+					}
+				],
+				"conditions": [{
+					"condition": "killed_by_player"
+				}]
+			},
+			{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:shulker_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Shulker Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Shulker\\\"}\",Peek:70b,Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+			{
+				"rolls": 1,
+				"entries": [{
+					"type": "item",
+					"name": "minecraft:cod_spawn_egg",
+					"functions": [{
+						"function": "set_nbt",
+						"tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+					}],
+					"conditions": [{
+							"condition": "minecraft:killed_by_player"
+						},
+						{
+							"condition": "minecraft:random_chance_with_looting",
+							"chance": 0.025,
+							"looting_multiplier": 0.0
+						}
+					]
+				}]
+			},
+			{
+				"rolls": 1,
+				"entries": [{
+					"type": "item",
+					"name": "minecraft:slime_spawn_egg",
+					"functions": [{
+						"function": "set_nbt",
+						"tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities\/luckyslime\",NoAI:1b,Size:0}}"
+					}],
+					"conditions": [{
+							"condition": "minecraft:killed_by_player"
+						},
+						{
+							"condition": "minecraft:random_chance_with_looting",
+							"chance": 0.025,
+							"looting_multiplier": 0.0
+						}
+					]
+				}]
+			}
+		]
+	}]
+}

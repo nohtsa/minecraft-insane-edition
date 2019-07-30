@@ -1,0 +1,136 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "functions": [
+            {
+              "count": {
+                "max": 1,
+                "min": 0,
+                "type": "minecraft:uniform"
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "max": 1,
+                "min": 0
+              },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:blaze_rod",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "chance": 0.015,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Blaze Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Blaze\\\"}\",Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+            }
+          ],
+          "name": "minecraft:blaze_spawn_egg",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "chance": 0.015,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Infernal Blaze\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{id:\"minecraft:blaze\",DeathLootTable:\"insanemod:entities/insane/blaze\",PersistenceRequired:1b,Health:100f,Tags:[\"buffed\",\"iblaze\"],CustomName:\"{\\\"text\\\":\\\"Infernal Blaze\\\",\\\"color\\\":\\\"red\\\"}\",Attributes:[{Name:generic.maxHealth,Base:200},{Name:generic.knockbackResistance,Base:100},{Name:generic.movementSpeed,Base:0.5},{Name:generic.attackDamage,Base:20},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40},{Name:generic.attackKnockback,Base:.5}]}}"
+            }
+          ],
+          "name": "minecraft:blaze_spawn_egg",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "chance": 0.015,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+            }
+          ],
+          "name": "minecraft:cod_spawn_egg",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "chance": 0.015,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities/luckyslime\",NoAI:1b,Size:0}}"
+            }
+          ],
+          "name": "minecraft:slime_spawn_egg",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:entity"
+}

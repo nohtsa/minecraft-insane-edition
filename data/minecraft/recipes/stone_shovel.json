@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "W",
+        "B"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        },
+        "W": {
+            "item": "minecraft:wooden_shovel"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        }
+    },
+    "result": {
+        "item": "minecraft:stone_shovel",
+        "count": 1
+    }
+}

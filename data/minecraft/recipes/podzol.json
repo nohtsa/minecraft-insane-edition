@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "CMC",
+        "#C#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:oak_leaves"
+        },
+        "C": {
+            "item": "minecraft:coarse_dirt"
+        },
+        "M": {
+            "item": "minecraft:mycelium"
+        }
+    },
+    "result": {
+        "item": "minecraft:podzol",
+        "count": 4
+    }
+}

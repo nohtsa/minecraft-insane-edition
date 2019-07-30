@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "SCS",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:emerald"
+        },
+        "S": {
+            "item": "minecraft:saddle"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:ravager_spawn_egg",
+        "count": 1
+    }
+}

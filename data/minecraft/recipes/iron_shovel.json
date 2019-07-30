@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i",
+        "W",
+        "B"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "W": {
+            "item": "minecraft:stone_shovel"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        }
+    },
+    "result": {
+        "item": "minecraft:iron_shovel",
+        "count": 1
+    }
+}

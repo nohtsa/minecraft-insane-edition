@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#M#",
+        "MCM",
+        "#M#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:white_wool"
+        },
+        "M": {
+            "item": "minecraft:mutton"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:sheep_spawn_egg",
+        "count": 1
+    }
+}

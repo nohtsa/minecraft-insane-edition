@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#N#",
+        "#G#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        },
+        "G": {
+            "item": "minecraft:golden_leggings"
+        }
+    },
+    "result": {
+        "item": "minecraft:diamond_leggings",
+        "count": 1
+    }
+}

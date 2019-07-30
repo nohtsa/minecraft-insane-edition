@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Elytra of Danny\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Boss Item\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\"]},RepairCost:5,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:-5,Operation:0,UUIDLeast:87433,UUIDMost:347550,Slot:\"chest\"},{AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:0.15,Operation:1,UUIDLeast:388248,UUIDMost:532314,Slot:\"chest\"}]}"
+            }
+          ],
+          "name": "minecraft:elytra",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:entity"
+}

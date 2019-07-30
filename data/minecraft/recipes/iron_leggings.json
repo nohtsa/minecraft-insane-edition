@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iBi",
+        "BCB",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "minecraft:bone_block"
+        },
+        "C": {
+            "item": "minecraft:chainmail_leggings"
+        }
+    },
+    "result": {
+        "item": "minecraft:iron_leggings",
+        "count": 1
+    }
+}

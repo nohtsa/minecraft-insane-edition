@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:potion"
+        }
+    },
+    "result": {
+        "item": "minecraft:splash_potion",
+        "count": 1
+        "function": "set_nbt",
+				"tag": "{display:{Name:\"{\\\"text\\\":\\\"Dungeon Loot\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"}}
+    }
+}

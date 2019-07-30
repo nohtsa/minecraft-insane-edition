@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "BCB",
+        "iBi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "minecraft:bone_block"
+        },
+        "C": {
+            "item": "minecraft:chainmail_chestplate"
+        }
+    },
+    "result": {
+        "item": "minecraft:iron_chestplate",
+        "count": 1
+    }
+}

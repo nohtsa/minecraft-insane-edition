@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " G ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "G": {
+            "item": "minecraft:golden_pickaxe"
+        },
+        "/": {
+            "item": "minecraft:end_rod"
+        }
+    },
+    "result": {
+        "item": "minecraft:diamond_pickaxe",
+        "count": 1
+    }
+}

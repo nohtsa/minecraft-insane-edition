@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#A#",
+        "ACA",
+        "#A#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:emerald"
+        },
+        "A": {
+            "item": "minecraft:arrow"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:pillager_spawn_egg",
+        "count": 1
+    }
+}

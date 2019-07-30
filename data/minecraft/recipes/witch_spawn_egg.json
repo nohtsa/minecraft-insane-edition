@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GS",
+        "GCG",
+        "SG#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "G": {
+            "item": "minecraft:glass_bottle"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:witch_spawn_egg",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "CVC",
+        "#C#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:feather"
+        },
+        "C": {
+            "item": "minecraft:chicken"
+        },
+        "V": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:chicken_spawn_egg",
+        "count": 1
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/i/",
+        "SBS",
+        " T "
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "B": {
+            "item": "minecraft:bow"
+        },
+        "T": {
+            "item": "minecraft:tripwire_hook"
+        }
+    },
+    "result": {
+        "item": "minecraft:crossbow",
+        "count": 1
+    }
+}

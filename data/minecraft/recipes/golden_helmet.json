@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#g#",
+        "gIg"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glowstone"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "I": {
+            "item": "minecraft:iron_helmet"
+        }
+    },
+    "result": {
+        "item": "minecraft:golden_helmet",
+        "count": 1
+    }
+}

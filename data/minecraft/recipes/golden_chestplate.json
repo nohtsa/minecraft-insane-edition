@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "g g",
+        "GIG",
+        "gGg"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "G": {
+            "item": "minecraft:glowstone"
+        },
+        "I": {
+            "item": "minecraft:iron_chestplate"
+        }
+    },
+    "result": {
+        "item": "minecraft:golden_chestplate",
+        "count": 1
+    }
+}

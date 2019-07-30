@@ -1,0 +1,123 @@
+{
+	"type": "minecraft:entity",
+	"pools": [{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:item",
+				"functions": [{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 0.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					},
+					{
+						"function": "minecraft:looting_enchant",
+						"count": {
+							"min": 0.0,
+							"max": 1.0
+						}
+					}
+				],
+				"name": "minecraft:rotten_flesh"
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:drowned_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Drowned Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Drowned\\\"}\",CanPickUpLoot:1b,ArmorItems:[{},{},{},{id:\"minecraft:dark_oak_button\",Count:1b}],Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.025,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:drowned_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Drowned Captain\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{id:\"minecraft:drowned\",DeathLootTable:\"insanemode:entities\/insane\/drowned\",PersistenceRequired:1b,Health:100f,IsBaby:0b,Tags:[\"buffed\",\"idrowned\"],CustomName:\"{\\\"text\\\":\\\"Drowned Captain\\\",\\\"italic\\\":false}\",HandItems:[{id:\"minecraft:trident\",Count:1b,tag:{Enchantments:[{id:\"minecraft:loyalty\",lvl:100s},{id:\"minecraft:impaling\",lvl:10s},{id:\"minecraft:riptide\",lvl:10s},{id:\"minecraft:channeling\",lvl:10s},{id:\"minecraft:mending\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.attackDamage\",Amount:12,Operation:0,UUIDLeast:247110,UUIDMost:298081,Slot:\"mainhand\"}]}},{id:\"minecraft:shield\",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:11,Pattern:\"bri\"},{Color:9,Pattern:\"gra\"},{Color:3,Pattern:\"gru\"}]}}}],HandDropChances:[0.0F,0.0F],ArmorItems:[{},{},{},{id:\"minecraft:player_head\",Count:1b,tag:{SkullOwner:{Id:\"ed8be957-5c45-4bca-91e9-10f92b70b5d4\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTcwYzY5NjJlZWE5ZDFjYjBiNTAzYWI3YjZiODFmYzUwNGI4YmQwMWY4YzQxNTYxZTBjMDIwYjZkMzY2YmQwMiJ9fX0=\"}]}}}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.0F],Attributes:[{Name:generic.maxHealth,Base:100},{Name:generic.followRange,Base:100},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40},{Name:generic.attackKnockback,Base:0.5},{Name:zombie.spawnReinforcements,Base:100}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.015,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:cod_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.015,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:slime_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities\/luckyslime\",NoAI:1b,Size:0}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.015,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:item",
+				"name": "minecraft:gold_ingot"
+			}],
+			"conditions": [{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.05,
+					"looting_multiplier": 0.01
+				}
+			]
+		}
+	]
+}

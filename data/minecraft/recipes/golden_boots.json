@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#I#",
+        "g g"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glowstone"
+        },
+        "I": {
+            "item": "minecraft:iron_boots"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:golden_boots",
+        "count": 1
+    }
+}

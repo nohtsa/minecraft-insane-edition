@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "W",
+        "B"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        },
+        "W": {
+            "item": "minecraft:wooden_sword"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        }
+    },
+    "result": {
+        "item": "minecraft:stone_sword",
+        "count": 1
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#H#",
+        "EIE",
+        "QNQ"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sea_lantern"
+        },
+        "H": {
+            "item": "minecraft:hopper"
+        },
+        "E": {
+            "item": "minecraft:enderman_spawn_egg"
+        },
+        "I": {
+            "item": "minecraft:heart_of_the_sea"
+        },
+        "Q": {
+            "item": "minecraft:quartz_pillar"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "minecraft:end_portal_frame",
+        "count": 6
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "BCB",
+        "#B#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:ice"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:stray_spawn_egg",
+        "count": 1
+    }
+}

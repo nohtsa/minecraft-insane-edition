@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#W#",
+        "WCW",
+        "#W#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wither_rose"
+        },
+        "W": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "C": {
+            "item": "minecraft:cod_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:wither_skeleton_spawn_egg",
+        "count": 1
+    }
+}
