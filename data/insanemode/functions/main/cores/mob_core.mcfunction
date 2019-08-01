@@ -1,4 +1,4 @@
 #Mob Core
-function insanemode:mob/luckyslime
-function insanemode:mob/kinghusk
-function insanemode:mob/trophy
+function insanemode:main/mob/luckyslime
+function insanemode:main/mob/kinghusk
+function insanemode:main/mob/trophy
