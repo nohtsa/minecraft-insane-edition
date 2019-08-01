@@ -37,7 +37,27 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance": 0.025,
+						"chance": 0.015,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:guardian_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Enraged Guardian\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{NoGravity:1b,Health:100f,Tags:[\"buffed\",\"iguardian\"],ActiveEffects:[{Id:25b,Amplifier:1b,Duration:20,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:100},{Name:generic.knockbackResistance,Base:1},{Name:generic.movementSpeed,Base:100},{Name:generic.attackDamage,Base:20},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.015,
 						"looting_multiplier": 0.0
 					}
 				]
@@ -57,7 +77,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance":0.025,
+						"chance":0.015,
 						"looting_multiplier": 0.0
 					}
 				]
@@ -77,7 +97,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance": 0.025,
+						"chance": 0.015,
 						"looting_multiplier": 0.0
 					}
 				]

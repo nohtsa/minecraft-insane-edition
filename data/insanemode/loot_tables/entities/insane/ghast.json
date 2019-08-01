@@ -4,7 +4,43 @@
 			"rolls": 1,
 			"entries": [{
 				"type": "minecraft:item",
-				"name": "minecraft:totem_of_undying"
+				"functions": [{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 1.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					},
+					{
+						"function": "minecraft:looting_enchant",
+						"count": {
+							"min": 0.0,
+							"max": 1.0
+						}
+					}
+				],
+				"name": "minecraft:ghast_tear"
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:ghast_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Haunting Ghast Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],ActiveEffects:[{Id:12b,Amplifier:100b,Duration:120000,ShowParticles:0b},{Id:14b,Amplifier:1b,Duration:120000,ShowParticles:0b}],CustomName:\"{\\\"text\\\":\\\"Haunting Ghast\\\"}\",Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.015,
+						"looting_multiplier": 0.0
+					}
+				]
 			}]
 		},
 		{
@@ -21,27 +57,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance": 1.0,
-						"looting_multiplier": 0.0
-					}
-				]
-			}]
-		},
-		{
-			"rolls": 1,
-			"entries": [{
-				"type": "item",
-				"name": "minecraft:evoker_spawn_egg",
-				"functions": [{
-					"function": "set_nbt",
-					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Evoker Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Evoker\\\"}\",CanPickUpLoot:1b,Attributes:[{Name:generic.maxHealth,Base:1}]}}"
-				}],
-				"conditions": [{
-						"condition": "minecraft:killed_by_player"
-					},
-					{
-						"condition": "minecraft:random_chance_with_looting",
-						"chance": 0.025,
+						"chance":1.0,
 						"looting_multiplier": 0.0
 					}
 				]
@@ -75,7 +91,7 @@
 						"function": "minecraft:set_count",
 						"count": {
 							"min": 1.0,
-							"max": 2.0,
+							"max": 4.0,
 							"type": "minecraft:uniform"
 						}
 					},
@@ -87,10 +103,7 @@
 						}
 					}
 				],
-				"name": "minecraft:emerald"
-			}],
-			"conditions": [{
-				"condition": "minecraft:killed_by_player"
+				"name": "minecraft:gunpowder"
 			}]
 		}
 	]

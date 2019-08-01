@@ -7,8 +7,8 @@
 				"functions": [{
 						"function": "minecraft:set_count",
 						"count": {
-							"min": 0.0,
-							"max": 1.0,
+							"min": 1.0,
+							"max": 4.0,
 							"type": "minecraft:uniform"
 						}
 					},
@@ -20,37 +20,17 @@
 						}
 					}
 				],
-				"name": "minecraft:ghast_tear"
+				"name": "minecraft:prismarine_shard"
 			}]
 		},
 		{
 			"rolls": 1,
 			"entries": [{
 				"type": "item",
-				"name": "minecraft:ghast_spawn_egg",
+				"name": "minecraft:guardian_spawn_egg",
 				"functions": [{
 					"function": "set_nbt",
-					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Ghast Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Ghast\\\"}\",Attributes:[{Name:generic.maxHealth,Base:1}]}}"
-				}],
-				"conditions": [{
-						"condition": "minecraft:killed_by_player"
-					},
-					{
-						"condition": "minecraft:random_chance_with_looting",
-						"chance": 0.015,
-						"looting_multiplier": 0.0
-					}
-				]
-			}]
-		},
-		{
-			"rolls": 1,
-			"entries": [{
-				"type": "item",
-				"name": "minecraft:ghast_spawn_egg",
-				"functions": [{
-					"function": "set_nbt",
-					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Haunting Ghast\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{CustomNameVisible:0b,DeathLootTable:\"insanemode:insane\/ghast\",PersistenceRequired:1b,Health:100f,ExplosionPower:5,Tags:[\"buffed\",\"ighast\"],ActiveEffects:[{Id:12b,Amplifier:100b,Duration:120000,ShowParticles:0b},{Id:14b,Amplifier:1b,Duration:120000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:100},{Name:generic.movementSpeed,Base:3},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40}]}}"
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Enraged Guardian Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,minecraft:egg,minecraft:trophy,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{Silent:1b,DeathLootTable:\"insanemode:entities\/trophy\",NoAI:1b,Health:1f,Tags:[\"buffed\",\"trophy\"],CustomName:\"{\\\"text\\\":\\\"Guardian\\\"}\",Attributes:[{Name:generic.maxHealth,Base:1}]}}"
 				}],
 				"conditions": [{
 						"condition": "minecraft:killed_by_player"
@@ -77,7 +57,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance":0.015,
+						"chance":1.0,
 						"looting_multiplier": 0.0
 					}
 				]
@@ -97,7 +77,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance_with_looting",
-						"chance": 0.015,
+						"chance": 1.0,
 						"looting_multiplier": 0.0
 					}
 				]
@@ -106,25 +86,62 @@
 		{
 			"rolls": 1,
 			"entries": [{
-				"type": "minecraft:item",
-				"functions": [{
-						"function": "minecraft:set_count",
-						"count": {
-							"min": 0.0,
-							"max": 2.0,
-							"type": "minecraft:uniform"
+					"type": "minecraft:item",
+					"weight": 2,
+					"functions": [{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 1.0,
+								"max": 2.0
+							}
+						},
+						{
+							"function": "minecraft:furnace_smelt",
+							"conditions": [{
+								"condition": "minecraft:entity_properties",
+								"predicate": {
+									"flags": {
+										"is_on_fire": true
+									}
+								},
+								"entity": "this"
+							}]
 						}
-					},
-					{
+					],
+					"name": "minecraft:cod"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"functions": [{
 						"function": "minecraft:looting_enchant",
 						"count": {
-							"min": 0.0,
-							"max": 1.0
+							"min": 1.0,
+							"max": 2.0
 						}
-					}
-				],
-				"name": "minecraft:gunpowder"
-			}]
+					}],
+					"name": "minecraft:prismarine_crystals"
+				},
+				{
+					"type": "minecraft:empty"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:loot_table",
+				"name": "minecraft:gameplay/fishing/fish"
+			}],
+			"conditions": [{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.05,
+					"looting_multiplier": 0.01
+				}
+			]
 		}
 	]
 }

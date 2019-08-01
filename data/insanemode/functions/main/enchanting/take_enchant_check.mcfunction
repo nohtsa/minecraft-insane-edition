@@ -1,0 +1,3 @@
+execute as @e[limit=1,type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:enchanted_book"}},nbt=!{Item:{tag:{StoredEnchantments:[{}]}}},sort=nearest] at @s run execute if entity @e[limit=1,distance=0..4,tag=!enchanted_item,type=minecraft:item,nbt={OnGround:1b},nbt={Item:{tag:{Enchantments:[{}]}}},nbt=!{Item:{id:"minecraft:enchanted_book"}},sort=nearest] at @s run function insanemode:main/enchanting/take_enchant
+
+execute as @e[limit=1,type=minecraft:item,nbt={OnGround:1b},nbt={Item:{id:"minecraft:enchanted_book"}},nbt=!{Item:{tag:{StoredEnchantments:[{}]}}}] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"mycelium",Radius:4f,Duration:1,Age:1}

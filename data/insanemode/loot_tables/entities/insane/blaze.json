@@ -72,7 +72,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Infernal Blaze\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{id:\"minecraft:blaze\",PersistenceRequired:1b,Health:100f,Tags:[\"buffed\",\"iblaze\"],CustomName:\"{\\\"text\\\":\\\"Infernal Blaze\\\",\\\"color\\\":\\\"red\\\"}\",Attributes:[{Name:generic.maxHealth,Base:200},{Name:generic.knockbackResistance,Base:100},{Name:generic.movementSpeed,Base:0.5},{Name:generic.attackDamage,Base:20},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40},{Name:generic.attackKnockback,Base:.5}]}}"
+              "tag": "{}"
             }
           ],
           "name": "minecraft:blaze_spawn_egg",

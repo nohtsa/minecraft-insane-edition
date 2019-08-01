@@ -1,0 +1,112 @@
+{
+	"type": "minecraft:entity",
+	"pools": [{
+			"rolls": 1,
+			"entries": [{
+				"type": "minecraft:item",
+				"functions": [{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 1.0,
+							"max": 4.0,
+							"type": "minecraft:uniform"
+						}
+					},
+					{
+						"function": "minecraft:looting_enchant",
+						"count": {
+							"min": 0.0,
+							"max": 1.0
+						}
+					}
+				],
+				"name": "minecraft:rotten_flesh"
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:husk_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"King Husk Statue\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},EntityTag:{Silent:1b,CustomNameVisible:0b,DeathLootTable:\"insanemode:trophy\",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:1b,Health:1f,IsBaby:0b,Tags:[\"buffed\",\"trophy\"],HandItems:[{id:\"minecraft:golden_sword\",Count:1b,tag:{display:{Name:\"{\\\"text\\\":\\\"Fools Golden Sword\\\",\\\"italic\\\":false}\"},AttributeModifiers:[{AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:1,Operation:0,UUIDLeast:856943,UUIDMost:953847,Slot:\"mainhand\"},{AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDLeast:199576,UUIDMost:888967,Slot:\"mainhand\"}]}},{}],HandDropChances:[0.0F,0.85F],ArmorItems:[{id:\"minecraft:golden_boots\",Count:1b,tag:{display:{Name:\"{\\\"text\\\":\\\"Fool's Golden Boots\\\",\\\"italic\\\":false}\"},AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:0,Operation:0,UUIDLeast:857129,UUIDMost:179949,Slot:\"feet\"}]}},{id:\"minecraft:golden_leggings\",Count:1b,tag:{display:{Name:\"{\\\"text\\\":\\\"Fool's Golden Leggings\\\",\\\"italic\\\":false}\"},AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:0,Operation:0,UUIDLeast:166054,UUIDMost:40696,Slot:\"legs\"}]}},{id:\"minecraft:golden_chestplate\",Count:1b,tag:{display:{Name:\"{\\\"text\\\":\\\"Fool's Golden Chestplate\\\",\\\"italic\\\":false}\"},AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:0,Operation:0,UUIDLeast:178920,UUIDMost:848608,Slot:\"chest\"}]}},{id:\"minecraft:player_head\",Count:1b,tag:{SkullOwner:{Id:\"55daeece-7828-499a-88bb-8456f58d335a\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTgyMDcxOTQ1NWRiMzIxMjRjNjc4YzQzYWVjNGNmMzM3NDlmZmFhOTE2NjUzMmU1NzFkOTQxYzUxNjViYjI4In19fQ==\"}]}}}}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],Attributes:[{Name:generic.maxHealth,Base:1}]}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 0.2,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:cod_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Broken Spawn Egg\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},minecrat:egg,EntityTag:{id:\"minecraft:area_effect_cloud\",Particle:\"enchant\",Radius:1f,Duration:1}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance":1.0,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+				"type": "item",
+				"name": "minecraft:slime_spawn_egg",
+				"functions": [{
+					"function": "set_nbt",
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Lucky Slime\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},HideFlags:1,Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}],EntityTag:{DeathLootTable:\"insanemode:entities\/luckyslime\",NoAI:1b,Size:0}}"
+				}],
+				"conditions": [{
+						"condition": "minecraft:killed_by_player"
+					},
+					{
+						"condition": "minecraft:random_chance_with_looting",
+						"chance": 1.0,
+						"looting_multiplier": 0.0
+					}
+				]
+			}]
+		},
+		{
+			"rolls": 1,
+			"entries": [{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_ingot"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:potato"
+				}
+			],
+			"conditions": [{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.05,
+					"looting_multiplier": 0.01
+				}
+			]
+		}
+	]
+}

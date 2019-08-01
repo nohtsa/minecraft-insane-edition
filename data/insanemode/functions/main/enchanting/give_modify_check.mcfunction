@@ -1,0 +1,1 @@
+execute as @e[limit=1,sort=nearest,type=item,nbt={Item:{tag:{AttributeModifiers:[{}]}}},nbt={OnGround:1b,Item:{id:"minecraft:quartz"}}] at @s run execute if entity @e[distance=0..4,limit=1,sort=nearest,type=item,nbt={OnGround:1b},nbt=!{Item:{tag:{AttributeModifiers:[{}]}}}] at @s run function insanemode:main/enchanting/give_modify_check_items

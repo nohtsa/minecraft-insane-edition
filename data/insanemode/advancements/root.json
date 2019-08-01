@@ -27,6 +27,6 @@
         }
     },
     "rewards": {
-        "function": "insanemode:staradv"
+        "function": "insanemode:main/staradv"
     }
 }
