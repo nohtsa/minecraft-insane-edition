@@ -71,7 +71,7 @@ data merge entity @e[type=minecraft:zombie_villager,tag=!buffed,limit=1] {Health
 data merge entity @e[type=minecraft:enderman,tag=!buffed,limit=1] {Health:60f,Attributes:[{Name:generic.maxHealth,Base:60},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20}],carriedBlockState:{Name:"minecraft:air"},Tags:["buffed"]}
 
 ##zombie pigman
-data merge entity @e[type=minecraft:enderman,tag=!buffed,limit=1] {Health:30f,Attributes:[{Name:generic.maxHealth,Base:30},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20}],Tags:["buffed"]}
+data merge entity @e[type=minecraft:zombie_pigman,tag=!buffed,limit=1] {Health:30f,Attributes:[{Name:generic.maxHealth,Base:30},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20}],Tags:["buffed"]}
 
 ##cave spider
 data merge entity @e[type=minecraft:cave_spider,tag=!buffed,limit=1] {Health:30f,Attributes:[{Name:generic.maxHealth,Base:30},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20}],Tags:["buffed"]}
@@ -82,7 +82,6 @@ data merge entity @e[type=minecraft:cave_spider,tag=!buffed,limit=1] {Health:30f
 data merge entity @e[type=minecraft:wither,tag=!buffed,limit=1] {Health:1000f,Invul:0,Attributes:[{Name:generic.maxHealth,Base:1000},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20}],Tags:["buffed"]}
 
 ##ender dragon
-data merge entity @e[type=minecraft:ender_dragon,tag=!buffed,limit=1] {Health:1000f,Attributes:[{Name:generic.maxHealth,Base:1000},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20},{Name:generic.attackDamage,Base:30}],Tags:["buffed"]}
+data merge entity @e[type=minecraft:ender_dragon,tag=!buffed,limit=1] {Health:2000f,Attributes:[{Name:generic.maxHealth,Base:2000},{Name:generic.armor,Base:30},{Name:generic.armorToughness,Base:20},{Name:generic.attackDamage,Base:30}],Tags:["buffed"]}
 
 ##########
-schedule function insanemode:mob/buffmobs 10t

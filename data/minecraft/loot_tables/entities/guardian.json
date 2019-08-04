@@ -50,7 +50,7 @@
 				"name": "minecraft:guardian_spawn_egg",
 				"functions": [{
 					"function": "set_nbt",
-					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Enraged Guardian\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{NoGravity:1b,Health:100f,Tags:[\"buffed\",\"iguardian\"],ActiveEffects:[{Id:25b,Amplifier:1b,Duration:20,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:100},{Name:generic.knockbackResistance,Base:1},{Name:generic.movementSpeed,Base:100},{Name:generic.attackDamage,Base:20},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40}]}}"
+					"tag": "{display:{Name:\"{\\\"text\\\":\\\"Enraged Guardian\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Insanemode Mob\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\"]},EntityTag:{NoGravity:1b,Health:100f,Tags:[\"buffed\",\"iguardian\"],DeathLootTable:\"insanemode:entities\/insane\/guardian\",ActiveEffects:[{Id:25b,Amplifier:1b,Duration:20,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:100},{Name:generic.knockbackResistance,Base:1},{Name:generic.movementSpeed,Base:100},{Name:generic.attackDamage,Base:20},{Name:generic.armor,Base:40},{Name:generic.armorToughness,Base:40}]}}"
 				}],
 				"conditions": [{
 						"condition": "minecraft:killed_by_player"

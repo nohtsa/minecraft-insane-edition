@@ -1,3 +1,1 @@
-##startup for mobbuffs
-function insanemode:mob/buffmobs
-function insanemode:enderbooks/init
+function insanemode:main/enderbooks/init
